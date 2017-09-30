@@ -44,7 +44,7 @@ class TurtleIterator:
         return self
 
     def next(self):
-        # fix bug
+        # fix bug here
         if self._curr_turtle:
             current = self._curr_turtle
             self._curr_turtle = self._curr_turtle.stands_on()
