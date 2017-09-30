@@ -94,4 +94,3 @@ if __name__ == '__main__':
     for t in turtle.all_the_way_down():
         print t, 'on',
     print 'what?'
-    
