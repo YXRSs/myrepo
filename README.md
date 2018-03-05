@@ -1,11 +1,35 @@
 # myrepo
-MODEL:
-MAX=90*10+(T-10)*55+25*15+(R-15)*20+10*20+(N-20)*5;
-[NEW_CUSTOMER_REQ]4000*10+(T-10)*1500+2000*15+(R-15)*1200+1000*20+(N-20)*800 >= 100000;
-[RADIO_REQ]R>=2*T;
-[TV_REQ]T<=20;
-[TV_REQ2]10000*T>=140000;
-[RADIO_REQ2]3000*R<=99000;
-[NEWSPAPER_REQ]1000*N>=30000;
-[BUDGET]10000*T+3000*R+1000*N<=279000;
-END
+  Global optimal solution found.
+  Objective value:                              2160.000
+  Infeasibilities:                              0.000000
+  Total solver iterations:                             1
+  Elapsed runtime seconds:                          0.02
+
+  Model Class:                                        LP
+
+  Total variables:                      3
+  Nonlinear variables:                  0
+  Integer variables:                    0
+
+  Total constraints:                    8
+  Nonlinear constraints:                0
+
+  Total nonzeros:                      15
+  Nonlinear nonzeros:                   0
+
+
+
+                                Variable           Value        Reduced Cost
+                                       T        15.00000            0.000000
+                                       R        33.00000            0.000000
+                                       N        30.00000            0.000000
+
+                                     Row    Slack or Surplus      Dual Price
+                                       1        2160.000            1.000000
+                        NEW_CUSTOMER_REQ        27100.00            0.000000
+                               RADIO_REQ        3.000000            0.000000
+                                  TV_REQ        5.000000            0.000000
+                                 TV_REQ2        10000.00            0.000000
+                              RADIO_REQ2        0.000000           0.1166667E-02
+                           NEWSPAPER_REQ        0.000000          -0.5000000E-03
+                                  BUDGET        0.000000           0.5500000E-02
