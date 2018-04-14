@@ -243,3 +243,30 @@ if(__name__ == "__main__"):
     print(v3)
     v3.set_ab('A', 'B')
     print(CoolClass.get_vals(v3))
+print('\n\n')
+print('2015 final q3')
+def func1(list1):
+    list1[0] = "A"
+    print(list1)
+def func2(list1, list2):
+    list1[0] = list2[0]
+    list3 = list1[1:3]
+    list3[0] = "B"
+    list2[0] = list3[0]
+    print(list1, list2, list3)
+def func3(list1, list2):
+    list3 = list1[:]
+    list1[0] = list2
+    list1[0][0] = "C"
+    list2[1] = "D"
+    print(list1, list2, list3)
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+func1(list1)
+func2(list1,list2)
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+func3(list1, list2)
+list1 = [[1, 2], 3]
+list2 = [[4], [5, [6]]]
+func3(list1, list2)
